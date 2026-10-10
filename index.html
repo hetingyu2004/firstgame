@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>TETRIS</h1>
+
+    <div class="layout">
+      <aside class="side">
+        <section class="panel">
+          <h2>Hold</h2>
+          <canvas id="hold"></canvas>
+        </section>
+        <section class="panel stats">
+          <h2>Score</h2>
+          <p id="score">0</p>
+          <h2>Best</h2>
+          <p id="best">0</p>
+          <h2>Level</h2>
+          <p id="level">1</p>
+          <h2>Lines</h2>
+          <p id="lines">0</p>
+        </section>
+      </aside>
+
+      <div class="board-wrap">
+        <canvas id="board"></canvas>
+        <div id="overlay" class="overlay">
+          <h2 id="overlay-title">TETRIS</h2>
+          <p id="overlay-text">Press Enter to start</p>
+        </div>
+      </div>
+
+      <aside class="side">
+        <section class="panel">
+          <h2>Next</h2>
+          <canvas id="next"></canvas>
+        </section>
+      </aside>
+    </div>
+
+    <p class="controls">
+      <kbd>←</kbd> <kbd>→</kbd> move
+      <kbd>↑</kbd> rotate
+      <kbd>Z</kbd> rotate back
+      <kbd>↓</kbd> soft drop<br>
+      <kbd>Space</kbd> hard drop
+      <kbd>C</kbd> hold
+      <kbd>P</kbd> pause
+    </p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
